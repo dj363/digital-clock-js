@@ -1,0 +1,124 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-repeat:no-repeat ;
+  background-size:cover ;
+  background-position: center;
+z-index: -1;
+  
+}
+#heading{
+  color: #000000;
+  text-shadow: -4px 1px 16px black;
+  font-size: 4rem;
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  width: 28rem;
+  margin: auto;
+}
+
+.container{
+  margin: 20px 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:8rem;
+  color:rgba(0,0,0,0.8);
+
+}
+
+.content{
+  margin: auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock{
+  padding:0.4rem;
+  background:black;
+  color: white;
+  border-radius: 20px;
+  font-size: 7rem;
+  text-align: center;
+  margin:1%;
+  height:10rem;
+  width:10rem;
+  border: 2px solid black; 
+  box-shadow:2px -2px 40px 1px black;
+}
+
+#am{ 
+  position: absolute;
+  transform: translate(4rem,1rem);
+  background:black;
+  color: white;
+    border-radius: 4px;
+  font-size: 1.4rem;
+  text-align: center;
+  height:2rem;
+  width:2.2rem;
+  border: 0.4px solid black;
+  box-shadow:2px -2px 40px 1px black;
+   transition: all 200ms ease-in-out;
+  display: flexbox;
+}
+#seconds{
+  color: #f23636;
+}
+.blink{
+  opacity:0;
+}
+.container span {
+  margin: 3px 0px;
+  transition: all 410ms ease ;
+}
+.style{
+   font-size: 1rem;
+  border:3px solid #ffffff;
+background:rgba(251, 126, 84, 0.58);
+  border-radius: 20px;
+  color:#ffffff;
+  display:block;
+  width:7.8rem;
+  height:2.925rem;
+  margin:32px auto;
+  transition: all 150ms ease-in-out;
+}
+.style:hover{
+  cursor:pointer;
+  border:2px solid #ffffff;
+  background:rgba(0,0 ,0 , 0.8);
+box-shadow:2px -2px 50px  black;
+ transform:scale(1.05);
+ 
+}
+.style:active{
+   border:2px solid #ffffff;
+  background:rgba(251, 126, 84, 0.3);
+  transform:scale(0.95);
+}
+.in{
+  font-size: 1rem;
+ font-family: 'Zen Dots', cursive;
+  color: white;
+}
+.no{
+border:0px;
+  background:none;
+  
+}
+
+.bye{
+ opacity: 0;
+  animation: ba 200ms ease-in-out 1 both;
+}
+@keyframes ba{
+  from {
+    transform:translate(4rem,1rem);
+  }
+  to{
+    transform:translate(4.8rem,1rem);
+  }
+}
